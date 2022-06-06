@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
 	<title>Team - Final Project Hacktiv8</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-	<!-- Custom styles for our template -->
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet" href="assets/css/main.css">
 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
 </head>
 
-<body>
-	<!-- Fixed navbar -->
-	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+<body class="home">
+	<div id="navbar" class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			  if (prevScrollpos > currentScrollPos) {
+				document.getElementById("navbar").style.top = "0";
+			  } else {
+				document.getElementById("navbar").style.top = "-100px";
+			  }
+			  prevScrollpos = currentScrollPos;
+			}
+		</script>
 		<div class="container">
 			<div class="navbar-header">
-				<!-- Button for smallest screens -->
+
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Final Project Hacktiv8"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
@@ -48,14 +49,12 @@
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 				</ul>
-			</div><!--/.nav-collapse -->
+			</div>
 		</div>
 	</div> 
-	<!-- /.navbar -->
 
 	<header id="head" class="secondary"></header>
 
-	<!-- container -->
 	<div class="container">
 		
 		<ol class="breadcrumb">
@@ -66,7 +65,6 @@
 
 		<div class="row">
 			
-			<!-- Sidebar -->
 			<aside class="col-md-4 sidebar sidebar-left">
 
 				<div class="row widget">
@@ -78,21 +76,19 @@
 				<div class="row widget">
 					<div class="col-xs-12">
 						<h4>Discusion Picture</h4>
-						<p><img src="assets/images/Team_Discusion.png" alt=""></p>
+						<p><img src="assets/images/Team_Discusion.png"></p>
 					</div>
 				</div>
 				<div class="row widget">
 					<div class="col-xs-12">
 						<h4>Teamworking</h4>
-						<p><img src="assets/images/Teamwork.jpg" alt=""></p>
+						<p><img src="assets/images/Teamwork.jpg"></p>
 						<p>Qui, debitis, ad, neque reprehenderit laborum soluta dolor voluptate eligendi enim consequuntur eveniet recusandae rerum? Atque eos corporis provident tenetur.</p>
 					</div>
 				</div>
 
 			</aside>
-			<!-- /Sidebar -->
 
-			<!-- Article main content -->
 			<article class="col-md-8 maincontent">
 				<header class="page-header">
 					<h1 class="page-title">Meet the Team.</h1>
@@ -102,10 +98,10 @@
 						<div class="card">
 							<img src="assets/images/Aria.png" alt="Aria" style="width: 100%">
 							<div class="container-team">
-								<h2>Aria Jane</h2>
-								<p class="title">Founder</p>
-								<p>Some text that describes me lorem ipsum ipsum lorem.</p>
-								<p>example@example.com</p>
+								<h2>Hibiscus</h2>
+								<p class="title">Lighting Support</p>
+								<p>Support lighting setting expert.</p>
+								<p><a href="mailto:#">aria.hibiscus@example.com</a></p>
 							</div>
 						</div>
 					</div>
@@ -115,9 +111,9 @@
 							<img src="assets/images/Verida.jpg" alt="Verida" style="width: 100%">
 							<div class="container-team">
 								<h2>Verida</h2>
-								<p class="title">Art Director</p>
-								<p>Some text that describes me lorem ipsum ipsum lorem.</p>
-								<p>example@example.com</p>
+								<p class="title">Director</p>
+								<p>Describe all planing to all crew.</p>
+								<p><a href="mailto:#">verida.real@example.com</a></p>
 							</div>
 						</div>
 					</div>
@@ -128,8 +124,8 @@
 							<div class="container-team">
 								<h2>Kal'sit</h2>
 								<p class="title">Designer</p>
-								<p>Some text that describes me lorem ipsum ipsum lorem.</p>
-								<p>example@example.com</p>
+								<p>Designer person and room.</p>
+								<p><a href="mailto:#">kalsit.dr@example.com</a></p>
 							</div>
 						</div>
 					</div>
@@ -139,19 +135,17 @@
 							<img src="assets/images/Montain.png" alt="Montain" style="width: 100%">
 							<div class="container-team">
 								<h2>Montain</h2>
-								<p class="title">Support</p>
-								<p>Some text that describes me lorem ipsum ipsum lorem.</p>
-								<p>example@example.com</p>
+								<p class="title">Photographer 2</p>
+								<p>secondary Photographer in Team.</p>
+								<p><a href="mailto:#">montain.exr@example.com</a></p>
 							</div>
 						</div>
 					</div>
+
 			</article>
-			<!-- /Article -->
-
 		</div>
-	</div>	<!-- /container -->
-	
 
+	</div>
 	<footer id="footer" class="top-space">
 
 		<div class="footer1">
@@ -188,38 +182,13 @@
 						</div>
 					</div>
 
-				</div> <!-- /row of widgets -->
+				</div>
 			</div>
 		</div>
 
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-					
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="simplenav">
-								<a href="index.html">Home</a> | 
-								<a href="about.html">About Me </a> |
-								<a href="contact.html">Contact</a> |
-							</p>
-						</div>
-					</div>
-
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
 	</footer>	
 		
-
-
-
-
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
 </body>
 </html>
